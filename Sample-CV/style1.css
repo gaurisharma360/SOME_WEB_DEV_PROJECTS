@@ -1,0 +1,21 @@
+body{
+    font-family:"Verdana" ;
+}
+h3{
+background-color: midnightblue;    
+color:white;
+text-align: center;
+}
+li.proj,li.train{
+font-weight: bold;
+}
+th{
+    text-align: center;
+}
+td{
+    text-align:left;
+}
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
