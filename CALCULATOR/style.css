@@ -1,0 +1,54 @@
+input[name="strad"]{
+    border-style:solid;
+    width:75%;
+     border-color: black;
+}
+input[name="address"]
+{
+    border-style:solid;
+    width: 35%;
+    border-color: black;
+    
+}
+*{
+    font-size:medium;
+    
+    background-position:center;
+    background-size:cover ;
+    color:black;
+}
+h1{
+    font-size: 250%;
+    text-decoration: underline;
+}
+h2{
+    font-size: 130%;
+    text-decoration: underline;
+}
+select{
+    border-radius: 7px;
+     border-color: black;
+     border-width: 0.15em;
+}
+input[name="mail"],input[name="phonenumber"],input[name="fname"],
+input[name="mname"],input[name="lname"],input[name="submit"]{
+border-color: black;
+ border-style:solid;
+}
+body{
+    background-image:url(img/background.png);
+}
+label{
+    font-size: 1.25em;;
+    
+}
+input[name="submit"]{
+    border-width: medium;
+    font-size: large;
+}
+
+
+
+
+
+    
