@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Student Registration Form
+        </title>
+        <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    </head>
+    <body>
+    
+    <form name="myform" actions="connect.php" method="post" >
+    <h1 style="text-align: center;" > Student Registration Form </h1>
+    <h2 style="text-align: center;">Fill out the form carefully for registration</h2>
+    <h2>Student Name</h2>
+    <div class="Name">
+    <label for="fname1">First name</label>
+    <input type="text" id="fname1" name="fname" required autocomplete="off"> &ensp;
+    <label for="mname1">Second name</label>
+    <input type="text" id="mname1" name="mname"> &ensp;
+    <label for="lname1">Last name</label>
+    <input type="text" id="lname1" name="lname" required autocomplete="off"> &ensp;
+     
+    <h2>Birth Date</h2>
+    <label for="DOB">Date of Birth</label>
+    <input type="date" size ="30" name="DOB" min="2000-01-01" max= "2023-01-01" required>
+    
+    
+    <h2>Gender</h2>
+    <select id="gender" name="gender" >
+        <option disabled="disabled" selected="selected">Please Select</option>
+        <option>Female</option>
+        <option>Male</option>
+        <option>Other</option>
+    </select> <br>
+    
+    <h2>Address</h2>
+    <label for="strad1">Street Address </label><br>
+    <input type="text" id="strad1" name="strad" required><br>
+    <label for="strad2">Street Address Line 2 </label><br>
+    <input type="text" id="strad2" name="strad"><br>
+    <label for="city">City</label><br>
+    <input type="text" id="city" name  ="address" required><br>
+    <label for="state">State / Province</label><br>
+    <input type="text" id="state" name="address" required ><br>
+    <label for="Postal Code">Postal/Zip Code</label><br>
+    <input type="number" id="Postal_Code" name="address_zip" ><br><br>
+    <label for="Country">Country</label>
+    <select  id="Country" name="Country" required >
+        <option disabled="disabled" selected="selected" >Please Select</option>
+        <option>INDIA</option>
+        <option>USA</option>
+        <option>AUSTRALIA</option>
+        <option>JAPAN</option>
+    </select><br>
+
+
+    <h2>Student E-mail</h2>
+    <input type="email" id="mail" name="mail" required>
+
+
+    <h2>Mobile Number</h2>
+    <input type="tel" id="phone" name="phonenumber" required> <br>
+<br>
+
+    <input type="submit" name="submit">
+    </form>
+
+    <script type="text/javascript">
+    function validateEmail() {
+         var emailID = document.myForm.mail.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) {
+            alert("Please enter correct email ID")
+            document.myForm.mail.focus() ;
+            return false;
+         }
+         return( true );
+        }
+ </script>
+    </body>
+</html>
